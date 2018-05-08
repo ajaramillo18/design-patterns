@@ -6,6 +6,12 @@
  * @author ajara
  *
  */
-public class State {
+public interface State {
+	
+	void wetClothes();
+	void startWashing();
+	void takeoutClothes();
+	
+	
 
 }
