@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class BookCatalog {
 	
-	ArrayList<Book> catalog;
+	ArrayList<Book> catalog =  new ArrayList<>();
 	
 	public void AddBook(String title, int pageNumber, String author) {
 		
@@ -22,9 +22,17 @@ public class BookCatalog {
 		
 	}
 	
+	
+	public void AddBook(Book newBook) {
+		
+
+		catalog.add(newBook );
+		
+	}
 	public Iterator getIterator() {
 		
-		
+		Iterator iter = new BookIterator(catalog);  
+		return iter;
 		
 		
 	}
