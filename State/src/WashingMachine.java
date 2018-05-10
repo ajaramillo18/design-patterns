@@ -9,7 +9,7 @@
 public class WashingMachine {
 
 	
-	State currentState;
+	private State currentState;
 	
 	/*states
 	 * washing
@@ -18,28 +18,32 @@ public class WashingMachine {
 	 */
 	
 	 
+	public WashingMachine(State currentState) {
+		super();
+		this.currentState = currentState;
+	}
+
+	
 	public void wetClothes() {
 		
-		currentState.wetClothes();
+		currentState.wetClothes(this);
 		
 	}
 	
+
 	public void startWashing() {
 		
-		currentState.startWashing();
+		currentState.startWashing(this);
 		
 	}
 	
 	public void takeoutClothes() {
 		
-		currentState.takeoutClothes();
+		currentState.takeoutClothes(this);
 		
 	}
 
-	public WashingMachine(State currentState) {
-		super();
-		this.currentState = currentState;
-	}
+
 
 	/**
 	 * @return the currentState

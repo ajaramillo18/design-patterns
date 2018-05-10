@@ -8,9 +8,10 @@
  */
 public interface State {
 	
-	void wetClothes();
-	void startWashing();
-	void takeoutClothes();
+	void wetClothes(WashingMachine context);
+
+	void startWashing(WashingMachine context);
+	void takeoutClothes(WashingMachine context);
 	
 	
 
