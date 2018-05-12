@@ -2,7 +2,15 @@
 public class Testing {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+
+		NetflixProxy ps3 = new NetflixProxy("The Ring");
+		
+		ps3.play();
+		
+		ps3.stop();
+		
+		ps3.play();
 
 	}
 
