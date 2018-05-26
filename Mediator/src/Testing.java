@@ -16,34 +16,32 @@ public class Testing {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String name = "Armando is working in mexico city";
-		
-		name = name.toUpperCase();
-		
-		char[] cname = name.toCharArray();
-		
-		Arrays.sort(cname);
-		Hashtable hash = new Hashtable<>();
-		
-		char x = 'a';
-		
-		int counter = 0;
-		for (char c: cname) {
-			
-			System.out.println(c);
-			if(x == c) {
-				
-				counter++;
-			}else {
-				hash.put(x, counter+1);
-				x = c;
-				
-				counter = 0;
-				
-			}
-		}
-			
-		System.out.println(hash.toString());
+
+		UberServer server = new UberServer();
+
+		UberUser pasajero1 = new UberPassenger(server);
+
+		pasajero1.setName("lolita");
+		pasajero1.setUbication(450);
+
+		UberUser pasajero2 = new UberPassenger(server);
+
+		server.addUser(pasajero1);
+
+		server.addUser(pasajero2);
+
+		pasajero2.setName("pepito");
+		pasajero2.setUbication(10);
+
+		UberUser taxista = new UberDriver(server);
+
+		taxista.setName("vitor");
+		taxista.setUbication(69);
+
+		server.addUser(taxista);
+
+		taxista.send();
+		pasajero1.send();
 
 	}
 

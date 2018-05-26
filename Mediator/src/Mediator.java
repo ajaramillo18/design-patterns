@@ -9,6 +9,6 @@
 public interface Mediator {
 	
 	
-	public void send (String message, Colleague colleague);
+	public void send (String message, UberUser colleague);
 
 }
