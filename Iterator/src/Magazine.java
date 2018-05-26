@@ -8,27 +8,26 @@
  */
 public class Magazine {
 
-private int issue;
-	
-	/**
- * @return the issue
- */
-public int getIssue() {
-	return issue;
-}
+	private int issue;
 
-/**
- * @param issue the issue to set
- */
-public void setIssue(int issue) {
-	this.issue = issue;
-}
+	/**
+	 * @return the issue
+	 */
+	public int getIssue() {
+		return issue;
+	}
+
+	/**
+	 * @param issue
+	 *            the issue to set
+	 */
+	public void setIssue(int issue) {
+		this.issue = issue;
+	}
 
 	private int pageNumber;
-	
+
 	private String Title;
-
-
 
 	/**
 	 * @return the pageNumber
@@ -38,7 +37,8 @@ public void setIssue(int issue) {
 	}
 
 	/**
-	 * @param pageNumber the pageNumber to set
+	 * @param pageNumber
+	 *            the pageNumber to set
 	 */
 	public void setPageNumber(int pageNumber) {
 		this.pageNumber = pageNumber;
@@ -52,11 +52,11 @@ public void setIssue(int issue) {
 	}
 
 	/**
-	 * @param title the title to set
+	 * @param title
+	 *            the title to set
 	 */
 	public void setTitle(String title) {
 		Title = title;
 	}
 
-	
 }

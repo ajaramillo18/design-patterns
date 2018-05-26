@@ -7,11 +7,11 @@
  *
  */
 public class Book {
-	
+
 	private String Author;
-	
+
 	private int pageNumber;
-	
+
 	private String Title;
 
 	/**
@@ -22,7 +22,8 @@ public class Book {
 	}
 
 	/**
-	 * @param author the author to set
+	 * @param author
+	 *            the author to set
 	 */
 	public void setAuthor(String author) {
 		Author = author;
@@ -36,7 +37,8 @@ public class Book {
 	}
 
 	/**
-	 * @param pageNumber the pageNumber to set
+	 * @param pageNumber
+	 *            the pageNumber to set
 	 */
 	public void setPageNumber(int pageNumber) {
 		this.pageNumber = pageNumber;
@@ -50,7 +52,8 @@ public class Book {
 	}
 
 	/**
-	 * @param title the title to set
+	 * @param title
+	 *            the title to set
 	 */
 	public void setTitle(String title) {
 		Title = title;

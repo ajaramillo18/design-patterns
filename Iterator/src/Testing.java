@@ -3,17 +3,15 @@ public class Testing {
 
 	public static void main(String[] args) {
 
-		/*Library
-		books 
-		magazines
-		newspaper
-		
-		for(books)
-			
-		for(magazines)
-			
-		for(newspaper)
-		*/
+		/*
+		 * Library books magazines newspaper
+		 * 
+		 * for(books)
+		 * 
+		 * for(magazines)
+		 * 
+		 * for(newspaper)
+		 */
 		Book libro1 = new Book();
 		libro1.setAuthor("H. G. Wells");
 		libro1.setPageNumber(255);
@@ -26,34 +24,29 @@ public class Testing {
 		libro3.setAuthor("Esopo");
 		libro3.setPageNumber(5);
 		libro3.setTitle("La liebre y la tortuga");
-		
-		BookCatalog bookCat =  new BookCatalog();
-		
+
+		BookCatalog bookCat = new BookCatalog();
 
 		bookCat.AddBook(libro1);
 		bookCat.AddBook(libro2);
 		bookCat.AddBook(libro3);
-		
+
 		Iterator iter = bookCat.getIterator();
-		
+
 		Book book;
-		
-		while(iter.hasNext()) {
-			
+
+		while (iter.hasNext()) {
+
 			System.out.println();
-			book = (Book)iter.next();
-			System.out.println("Title: "+book.getTitle());
-			System.out.println("Author: "+book.getAuthor());
-			System.out.println("Number of pages: "+book.getPageNumber());
-			
+			book = (Book) iter.next();
+			System.out.println("Title: " + book.getTitle());
+			System.out.println("Author: " + book.getAuthor());
+			System.out.println("Number of pages: " + book.getPageNumber());
+
 		}
-		
-		
-		
-		
-		//use java iterator class too
+
+		// use java iterator class too
 
 	}
 
 }
-

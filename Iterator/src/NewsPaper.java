@@ -8,28 +8,26 @@
  */
 public class NewsPaper {
 
-private String frontPage;
+	private String frontPage;
 
-private int pageNumber;
+	private int pageNumber;
 
-private String Title;
-
-	
-	
+	private String Title;
 
 	/**
- * @return the frontPage
- */
-public String getFrontPage() {
-	return frontPage;
-}
+	 * @return the frontPage
+	 */
+	public String getFrontPage() {
+		return frontPage;
+	}
 
-/**
- * @param frontPage the frontPage to set
- */
-public void setFrontPage(String frontPage) {
-	this.frontPage = frontPage;
-}
+	/**
+	 * @param frontPage
+	 *            the frontPage to set
+	 */
+	public void setFrontPage(String frontPage) {
+		this.frontPage = frontPage;
+	}
 
 	/**
 	 * @return the pageNumber
@@ -39,7 +37,8 @@ public void setFrontPage(String frontPage) {
 	}
 
 	/**
-	 * @param pageNumber the pageNumber to set
+	 * @param pageNumber
+	 *            the pageNumber to set
 	 */
 	public void setPageNumber(int pageNumber) {
 		this.pageNumber = pageNumber;
@@ -53,12 +52,11 @@ public void setFrontPage(String frontPage) {
 	}
 
 	/**
-	 * @param title the title to set
+	 * @param title
+	 *            the title to set
 	 */
 	public void setTitle(String title) {
 		Title = title;
 	}
 
-	
 }
-
