@@ -8,28 +8,32 @@
  */
 public class EmptyState implements State {
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see State#wetClothes()
 	 */
 	@Override
 	public void wetClothes(WashingMachine context) {
-		
-		
-		
+
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see State#startWashing()
 	 */
 	@Override
 	public void startWashing(WashingMachine context) {
-		
+
 		System.out.println("Mchine is washing now");
 		context.setCurrentState(new WashingState());
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see State#takeoutClothes()
 	 */
 	@Override

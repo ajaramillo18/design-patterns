@@ -7,10 +7,10 @@
  *
  */
 public class WashingState implements State {
-	
-	
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see State#wetClothes()
 	 */
 	@Override
@@ -19,7 +19,9 @@ public class WashingState implements State {
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see State#startWashing()
 	 */
 	@Override
@@ -27,7 +29,9 @@ public class WashingState implements State {
 		System.out.println("The machine is already washing");
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see State#takeoutClothes()
 	 */
 	@Override
