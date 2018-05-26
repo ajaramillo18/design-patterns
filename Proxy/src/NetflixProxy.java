@@ -7,20 +7,18 @@
  *
  */
 public class NetflixProxy implements NetflixMovie {
-	
-	
-	private ServerMovie movie;
-	
-	
 
-	
-	public NetflixProxy(String  movieTitle) {
+	private ServerMovie movie;
+
+	public NetflixProxy(String movieTitle) {
 		super();
 		this.movie = new ServerMovie();
 		this.movie.setTitle(movieTitle);
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see NetflixMovie#play()
 	 */
 	@Override
@@ -29,7 +27,9 @@ public class NetflixProxy implements NetflixMovie {
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see NetflixMovie#stop()
 	 */
 	@Override

@@ -7,7 +7,7 @@
  *
  */
 public class ServerMovie implements NetflixMovie {
-	
+
 	private String title;
 
 	/**
@@ -18,13 +18,16 @@ public class ServerMovie implements NetflixMovie {
 	}
 
 	/**
-	 * @param title the title to set
+	 * @param title
+	 *            the title to set
 	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see NetflixMovie#play()
 	 */
 	@Override
@@ -33,12 +36,14 @@ public class ServerMovie implements NetflixMovie {
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see NetflixMovie#stop()
 	 */
 	@Override
 	public void stop() {
-		System.out.println( this.title + " is paused");
+		System.out.println(this.title + " is paused");
 
 	}
 
