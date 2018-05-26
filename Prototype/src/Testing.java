@@ -23,13 +23,13 @@ public class Testing {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		tonia.setAge(30);
-		
-		System.out.println("Amalia edad: "+ amalia.getAge());
-		System.out.println("Amalia nombre: "+ amalia.getName());
-		System.out.println("Tonia edad: "+ tonia.getAge());
-		System.out.println("Tonia nombre : "+ tonia.getName());
+
+		System.out.println("Amalia edad: " + amalia.getAge());
+		System.out.println("Amalia nombre: " + amalia.getName());
+		System.out.println("Tonia edad: " + tonia.getAge());
+		System.out.println("Tonia nombre : " + tonia.getName());
 
 	}
 
