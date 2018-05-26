@@ -7,15 +7,15 @@
  *
  */
 public class Uniteller extends MoneySender {
-	
-	
 
 	public Uniteller() {
 		super();
 		super.hasSpecialMessage = false;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see MoneySender#checkClient()
 	 */
 	@Override
@@ -24,7 +24,9 @@ public class Uniteller extends MoneySender {
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see MoneySender#depositMoney()
 	 */
 	@Override
@@ -33,7 +35,9 @@ public class Uniteller extends MoneySender {
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see MoneySender#sendSpecialMessage()
 	 */
 	@Override
